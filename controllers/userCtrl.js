@@ -27,11 +27,11 @@ module.exports = {
             if (users[i].name === req.body.name) {
                 if (req.body.password === users[i].password) {
                     req.session.currentUser = users[i];
-                    res.status(200).send({ userFound: true });
+                  return res.status(200).send({ userFound: true });
                 }
             }
         }
-        res.send({ userFound: false });
+       return res.send({ userFound: false });
     }
     
     

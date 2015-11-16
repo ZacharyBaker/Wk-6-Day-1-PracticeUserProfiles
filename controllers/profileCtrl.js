@@ -36,7 +36,7 @@ module.exports = {
                 }
             }
         }
-        res.status(200).send({currentUser: currUser, friends: friendsProfilesArray});
+       return res.status(200).send({currentUser: currUser, friends: friendsProfilesArray});
     }
     
 }
