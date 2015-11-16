@@ -4,6 +4,7 @@ angular.module('userProfiles')
     
     login: function( user ) {
       /* FIX ME */
+      
     }
   }
 });
